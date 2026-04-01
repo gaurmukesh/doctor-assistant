@@ -14,7 +14,7 @@ An AI-powered clinic receptionist chatbot built with Flask and LangChain. It hel
 
 - **Backend:** Python, Flask
 - **AI:** LangChain + OpenAI GPT-4o-mini
-- **Database:** SQLite
+- **Database:** PostgreSQL (hosted on Supabase)
 - **Frontend:** HTML, JavaScript
 
 ## Setup
@@ -41,7 +41,10 @@ An AI-powered clinic receptionist chatbot built with Flask and LangChain. It hel
    Create a `.env` file in the root directory:
    ```
    OPENAI_API_KEY=your_openai_api_key_here
+   DATABASE_URL=postgresql://user:password@host:5432/dbname
    ```
+
+   > Get a free PostgreSQL database at [supabase.com](https://supabase.com) and copy the connection string from **Settings → Database → URI**.
 
 5. **Initialize the database**
    ```bash
