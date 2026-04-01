@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Doctor's Assistant Chatbot</title>
+    <script src="/static/script.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        #chatbox { border: 1px solid #ccc; padding: 10px; height: 300px; overflow-y: scroll; margin-bottom: 10px; }
+        input, button { margin: 5px 0; padding: 8px; }
+    </style>
+</head>
+<body>
+    <h2>Doctor's Assistant Chatbot</h2>
+    <div id="chatbox"></div>
+
+    <!-- Patient details -->
+    <input type="text" id="patientName" placeholder="Your Name">
+    <input type="text" id="patientPhone" placeholder="Phone Number">
+    <input type="text" id="patientEmail" placeholder="Email">
+
+    <!-- Chat input -->
+    <input type="text" id="userInput" placeholder="Type your message...">
+    <button onclick="sendMessage()">Send</button>
+</body>
+</html>
