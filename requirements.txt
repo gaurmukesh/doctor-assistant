@@ -1,5 +1,6 @@
 flask
 openai>=1.0.0
 python-dotenv>=1.0.0
+psycopg2-binary
 langchain==0.1.0
 langchain-openai==0.0.5

@@ -1,7 +1,11 @@
-import sqlite3
+import psycopg2
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 def show_table(table_name):
-    conn = sqlite3.connect("clinic.db")
+    conn = psycopg2.connect(os.getenv("DATABASE_URL"))
     cur = conn.cursor()
     cur.execute(f"SELECT * FROM {table_name}")
     rows = cur.fetchall()
